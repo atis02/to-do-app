@@ -1,0 +1,43 @@
+
+/* Dark mode btn */
+
+.dark-mode-btn {
+	order: 9;
+
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+
+	width:90px;
+	height: 52px;
+	padding: 5px;
+
+	border-radius: 50px;
+	background-color: #272727;
+}
+
+.dark-mode-btn::before {
+	
+	content: '';
+
+	position: absolute;
+	top: 7px;
+	left: 3px;
+	
+	display: block;
+	width: 35px;
+	height: 35px;
+
+	border-radius: 50%;
+	background-color: #fff;
+	transition: left 0.2s ease-in;
+}
+.dark-mode-btn--active::before {
+	left: 48px;
+}
+
+.dark-mode-btn__icon {
+	position: relative;
+	z-index: 16;
+	padding: 11px 3px 0 8px;
+}
